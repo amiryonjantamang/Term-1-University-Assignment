@@ -88,7 +88,6 @@ main ul li a img{ /*for the placeholder images*/
     height: 200px;
     margin-right: auto;/*this code is from  (W3schools, 2021)*/
     margin-left: auto;/*this code is from  (W3schools, 2021)*/
-    background: FFFFFF;
     display: block;
 } /*here, main part of portfolio page ends.*/
 
@@ -173,10 +172,17 @@ main ul li a img{ /*for the placeholder images*/
 .srh{
 	margin-bottom: 0px;
 }
-footer{ /*footer is started here.'*/
+.validimages{
+    height: 500px;
+}
+main p a{
+	color: #ff8d00fa;
+}
+
+footer{ /*footer is started here.*/
 	background: black;
-	width: 100%;
-	display: block;
+    width: 100%;
+    display: block;
 }
 .fmh{ /*text */
     padding-left: 10px;
@@ -213,7 +219,7 @@ footer{ /*footer is started here.'*/
     color: white;
 } 
 
-@media screen and (max-width: 600px){ /*responsive design for the page starts here*/
+@media screen and (max-width: 414px){ /*responsive design for the page starts here*/
 	nav{ 
 		flex-direction: column;
 	    padding-bottom: 170px;
@@ -274,18 +280,16 @@ footer{ /*footer is started here.'*/
 	.contnr{
 		padding-bottom:5px;
 	}
+	.hfoot{
+		order: 3;
+	}
     
     .contact{
-    	dispaly: column;
+        flex-direction: column;
     }
     .cinfo{
-    	order: 1;
-    }
-    .fillup{
     	order: 2;
     }
-
-    footer{
-    	order: 3;
+    .fillup{
+    	order: 1;
     }
-
