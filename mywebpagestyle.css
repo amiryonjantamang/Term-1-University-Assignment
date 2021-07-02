@@ -1,65 +1,69 @@
-body{ /*This command is for body, This is a selector which helps to style the elements based on their tags.*/
-    background: black; /*For background colour of the elements*/
-    display: grid;
-} /*to close the command for element*/
+/********************************BODY SECTION*******************************/
+body{ /*This is a selector which helps to style the elements based on their tags.*/
+    background: black; /*For background colour*/
+    display: grid; /*to display the element in different forms*/
+} /*to close the command for element*/ /********************************************************************/
 
-.cle{ /*These selectors identify what need to be styled basedd on the classes we give to the elements. */
+/*****************clear**********************/
+.cle{ /*These selectors identify what need to be styled basedd on the classes we give to the elements.*/
 	clear: both; /*It helps to prevent the sections to overlap eachother. */
-}
+}/**************************************************************************/
 
+/*****************************HAMBURGER ICON FOR RESPONSIVE VIEW*********************************/
 .hamburger{
 	display: none;
 }
 i.fa.fa-bars::before{
-	color: white;
-	font-size: 40px;
-}
+	color: white; /*for text colour*/
+	font-size: 40px; /*for text size*/
+}/**********************************************************************************/
 
-nav{ /*this is navigation bar*/
+/*************NAVIGATION BAR***************/
+nav{
 	background: black;
     width: 100%; /*for size of the elements*/
 }
-#mura{
+#mura{ /*to identify the elements from the id we give.*/
 	display: none;
 }
-nav ul{ /*a container for li.*/
+nav ul{
 	background: black;
     padding-left: 0px; /*for padding of the elements*/
 }
-nav ul li{ /*containers for pages link*/
+nav ul li{
 	display: inline; /*for displaying the elements anyway we want*/
-	list-style: none; /*removes the default dot besides the text.*/
+	list-style: none; /*removes the default list style of text.*/
 	background: black;
 	padding-left: 0px;
 	padding-right: 15px;
 }
-nav ul li a { /*this are links for different pages*/
+nav ul li a {
 	text-decoration: none;/*removes the default blue color and underline of text containing link.*/
 	color: white;
     font-size: 20px; /*adjusts the font size*/
-}
+}/****************************************************************************************************/
 
-
-header{ /*header section for the body starts here.*/
+/************************HEADER SECTION**********************/
+header{
 	background: #333333;
 }
 header div{
 	width: 100%;
 	display: flex;
 } 
-.mylogo{ /*for my logo.*/
-    height: 40px; /*adjusts the image size*/
+.mylogo{
+    height: 40px; /*for image size*/
     padding: 6px;
 }
-.welcome{ /*body section headings*/
+.welcome{
 	width: 100%;
 	color: white;
-	text-align: center;
+	text-align: center; /*for positioning text*/
     font-size: 45px;
-    padding-left: 450px;
-}
+}/****************************/
 
-.home{ /*this is for the main part of the home*/
+/*********************MAIN PART OF HOME PAGE*************************/
+.home{
 	display: flex;
 	padding-top: 10px;
     padding-bottom: 150px;
@@ -71,33 +75,34 @@ img{
 	height: 600px;
     padding-top: 10px;
 }
-.bio{ /*container for contnr*/
+.bio{
 	padding-left: 25px;
     padding-top: 130px;
 }
 .contnr{ 
 	background: black;
     color: white;
-}/*here, the main part of home is ended*/
+}
 
-.portfolio{ /*this is for the main part of the portfolio page*/
+.portfolio{ 
 	width: 100%;
 }
-main ul li a img{ /*for the placeholder images*/
+main ul li a img{
     width: 90%;
     height: 200px;
-    margin-right: auto;/*this code is from  (W3schools, 2021)*/
-    margin-left: auto;/*this code is from  (W3schools, 2021)*/
+    margin-right: auto; /*for margin of element*/
+    margin-left: auto;
     display: block;
-} /*here, main part of portfolio page ends.*/
+}/*************************************************/
 
-.contact{ /*this is for the main part of the contact page.*/
+/**********************MAIN PART OF CONTACT PAGE********************/
+.contact{
     width: 100%;
     padding-bottom: 122px;
     background: black;
     display: flex;
 }
-.cinfo{ /*this is for contact information*/
+.cinfo{
 	width: 50%;
 	color: white;
 	padding-left: 20px;
@@ -110,21 +115,23 @@ main ul li a img{ /*for the placeholder images*/
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    border: 2px solid white;
+    border: 2px solid white; /*for borber of the element*/
 }
-.ch1{ /*for the heading of form*/
+.ch1{
     background-color: white;
     width: 390px;
+    font-size: 32px;
     animation-name: blink; /*denotes the element which has to be animated*/
     animation-duration: 2s; /*duration of animation*/
     animation-iteration-count: 1000; /*how many times to repeat the animation*/
 }
-@keyframes blink{ /*for animation named blink*/
+@keyframes blink{ /*for animation*/
 	from {background-color: black;} /*changes form this colour to*/
 	to {background-color: #333333;} /*changes to this colour from*/
-}/*here, main part of contact page style ends.*/
+}/*******************************************************************************/
 
-.cv{ /*cv page codes starts form here*/
+/******************MAIN PART OF C.V*******************/
+.cv{
 	color: white;
 	display: flex;
 	margin-bottom: 25px;
@@ -137,7 +144,7 @@ main ul li a img{ /*for the placeholder images*/
 }
 .cvimg{
     height: 120px;
-	border-radius: 300px 300px 300px 300px; 
+	border-radius: 300px 300px 300px 300px; /*for the border curve*/
 }
 .lup{ 
     list-style: none;
@@ -163,11 +170,13 @@ main ul li a img{ /*for the placeholder images*/
 .cvtext{
 	padding-top: 30px;
 	list-style: none;
-}
+}/*********************************************/
 
+/*********************MAIN PART OF SITE REPORT**********************/
 .sitereport{
 	color: white;
 	text-align: center;
+	padding-bottom: 40px;
 }
 .srh{
 	margin-bottom: 0px;
@@ -177,15 +186,15 @@ main ul li a img{ /*for the placeholder images*/
 }
 main p a{
 	color: #ff8d00fa;
-}
-
-footer{ /*footer is started here.*/
+}/****************************/
+ 
+/************************FOOTER SECTION***************************/
+footer{
 	background: black;
     width: 100%;
     display: block;
 }
-.fmh{ /*text */
-    padding-left: 10px;
+.fmh{
     color: black;
     width: 130px;
     font-size: 16px;
@@ -197,12 +206,12 @@ footer{ /*footer is started here.*/
 	from {background-color: black;} 
 	to {background-color: white;} 
 }
-.iicons{ /*container for icons of social medias*/
+.iicons{
 	display: flex;
     padding-left: 5px;
 }
 .i1{
-	padding-top: 12px;
+	padding-top: 11px;
 	font-size: 22px; 
 	color: white;
 }
@@ -217,17 +226,19 @@ footer{ /*footer is started here.*/
     padding-top: 10px;
     font-size:25px;
     color: white;
-} 
+}/****************************************/
 
-@media screen and (max-width: 414px){ /*responsive design for the page starts here*/
-	nav{ 
-		flex-direction: column;
-	    padding-bottom: 170px;
+/**************************RESPONSIVE STARTS FORM HERE***************************/
+@media screen and (max-width:414px){
+
+	/********NAVIGATION BAR********/
+	nav{
 	    display: none;
-	}
-	#mura{ 
+	}/****************************/
+
+    /*NAVIGATION BAR FOR RESPONSIVE*/ 
+	#mura{
 		flex-direction: column;
-	    display: none;
 	}
     i.fa.fa-bars::before{
         font-size: 25px;
@@ -251,15 +262,17 @@ footer{ /*footer is started here.*/
 		background: black;
 		font-size: 20px;
 		border: none;
-	}
+	}/*********************************/
 
+    /***********HEADER SECTION**********/
 	.welcome{
-        font-size: 16px;
+        font-size: 30px;
         text-align: center;
-        padding-top: 15px;
+        padding-top: 8px;
         padding-left: 7px;
-	}
+	}/*******************************/
 
+    /*********HOME PAGE**************/
 	.home{ 
 		flex-direction:column; 
 		padding-bottom: 50px;
@@ -282,14 +295,68 @@ footer{ /*footer is started here.*/
 	}
 	.hfoot{
 		order: 3;
-	}
+	}/********************************************************************************/
     
+    /**********CONTACT PAGE**********/
     .contact{
         flex-direction: column;
+        padding-left: 0px;
+        width: 100%;
+        padding-bottom: 30px;
     }
+    .fill{
+    	order: 1;
+    	margin-left: 0px;
+    	width: 100%;
+    	padding-left: 4px;
+    }
+    .ch1{
+        padding-left: 0px;
+        font-size: 30px;
+    }    
     .cinfo{
     	order: 2;
+    	width: 100%;
+    	font-size: 20px;
+    	padding-left: 4px;
+    }/****************************/
+
+    /**********C.V**************/
+    .cv{
+        width: 100%;
     }
-    .fillup{
-    	order: 1;
+    .cvleft{
+        width: 36%;
+        padding-left: 5px;
     }
+    .cvimg{
+    	height: 95px;
+    }
+    .ldown{
+    	font-size: 10px;
+    }
+    .cvright{
+        padding-left: 10px;
+    }
+    .cvrheader{
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-size: 9px;
+    }
+    .cvtext{
+        padding-top: 0px;
+        font-size: 10px;
+    }
+    /****************************/
+
+    /*********SITE REPORT***********/
+    .srh{
+        font-size: 15px;
+    }
+    .exp{
+    	width: 100%;
+    }
+    .validimages{
+    	height: 180px;
+    }/****************************/
+}/***************************************************************************************/

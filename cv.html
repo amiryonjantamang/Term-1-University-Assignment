@@ -1,59 +1,61 @@
-<!DOCTYPE html> <!--defines the type of document-->
-<html lang="en"> <!-- HTML structure starts here.-->
-<head> <!--This command is for the head of the structure.-->
-    <title> Curriculum Vitae </title> <!--title of html document-->
-    <meta charset="UTf-8"> <!--defines metadata about html document-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--to link to cloudflare for icons-->
-    <link href="mywebpagestyle.css" rel="stylesheet" type="text/css"> <!--To link the CSS file.-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!--To make the page responsive.-->
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head> 
+    <title> Curriculum Vitae </title>
+    <meta charset="UTf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="mywebpagestyle.css" rel="stylesheet" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head> 
 
-<body> <!--Body section of the page starts form here.-->
+<body>
     
-    <nav> <!--This element is for navigation bar of the pages.-->
-        <ul> <!--for the text element-->
-            <li> <a href="index.html"> Home </a> </li> <!--Link 1-->
-            <li> <a href="portfolio.html"> Portfolio </a> </li> <!--Link 2-->
-            <li> <a href="contact.html"> Contact </a> </li> <!--Link 3-->
-            <li> <a href="cv.html"> Curriculum Vitae </a> </li> <!--Link 4-->
-            <li> <a href="sitereport.html"> Site Report </a> </li> <!--Link 5-->
+    <nav> 
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="portfolio.html"> Portfolio </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+            <li> <a href="cv.html"> Curriculum Vitae </a> </li>
+            <li> <a href="sitereport.html"> Site Report </a> </li>
         </ul>
     </nav>
     <div class="hamburger">
         <button id="bars" onclick="srab()"> <i class="fa fa-bars"> </i> </button>
     </div>
-    <div id= mura> <!--This element is for navigation bar of the pages.-->
+    <div id= mura>
         <ul> <!--for the text element-->
-            <li> <a href="index.html"> Home </a> </li> <!--Link 1-->
-            <li> <a href="portfolio.html"> Portfolio </a> </li> <!--Link 2-->
-            <li> <a href="contact.html"> Contact </a> </li> <!--Link 3-->
-            <li> <a href="cv.html"> Curriculum Vitae </a> </li> <!--Link 4-->
-            <li> <a href="sitereport.html"> Site Report </a> </li> <!--Link 5-->
+            <li> <a href="index.html"> Home </a> </li> 
+            <li> <a href="portfolio.html"> Portfolio </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+            <li> <a href="cv.html"> Curriculum Vitae </a> </li>
+            <li> <a href="sitereport.html"> Site Report </a> </li> 
         </ul>
     </div>
 
-    <div class="cle"> </div> <!--This is to part the sections or it disables containers to overlap eachother-->
+    <div class="cle"> </div> 
 
-    <header> <!--This is for the heading of pages.-->
-        <div> <a href="index.html"> <img class="mylogo" src="mylogo.png" alt="Logo of my page"/> </a> <!--Linking the home menu is done with a logo here.-->
-            <div class="welcome"> CURRICULUM VITAE </div> <!--This is header text-->
+    <header> 
+        <div> <a href="index.html"> <img class="mylogo" src="mylogo.png" alt="Logo of my page"/> </a> 
+            <strong class="welcome"> CURRICULUM VITAE </strong>
         </div> 
-    </header> <!--Header section closes here-->
+    </header> 
 
     <div class="cle"></div>
 
-    <main class="cv">
+    <main class="cv"> <!--Here is the main part of C.V page-->
         <ul class="cvleft"> 
-            <li class="lup">
-                <div class="cvinfo"><img class="cvimg" src="myimage.jpg" alt="An image of me at Changunarayan Temple.">
-                </div>  
-            </li>
+            <div class="lup">
+                <img class="cvimg" src="myimage.jpg" alt="An image of me at Changunarayan Temple.">
+            </div>  
             <li class="ldown">
-                <h2><u>CONTACT</u></h2>
+                <h2><u>CONTACT</u>
+                </h2>
                 Phone: 9869666675<br><br>
                 Mail: amir.2021144@nami.edu.np <br><br>
                 Loaction: Kathmandu<br><br>
-                <h2><u>EDUCATION</u></h2>
+                <h2><u>EDUCATION</u></h2> <!--for header 2-->
                 Secondary Eduacation<br><br>
                 Xavier Int'l School, Kathmandhu<br><br>
                 2018-2020<br><br>
@@ -78,15 +80,17 @@
             </li>
         </ul>
     </main>
+    
+    <div class="cle"></div>
 
-<footer> <!--This is a footer section-->
-    <div class="fmh"> FIND ME HERE </div>
-    <div class="iicons"> <!--The logo are placed of different social medias where I can be found-->
+<footer> 
+    <strong class="fmh"> FIND ME HERE </strong>
+    <div class="iicons">
         <div class="i1"><i class="fa fa-facebook"> </i></div>
         <div class="i2"><i class="fa fa-instagram"> </i></div>
         <div class="i3"><i class="fa fa-twitter"> </i></div>
     </div>
-</footer> <!--Footer section is closed here-->
+</footer> 
 
 <script>         
     function srab() {
@@ -99,5 +103,5 @@
     }
 </script>
 
-</body><!--Body section of the page ends here-->
-</html><!--HTML structure ends here-->
+</body>
+</html>
